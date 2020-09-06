@@ -3,12 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-    <servlet>
+    <!--<servlet>
         <servlet-name>demo</servlet-name>
         <servlet-class>com.servlet.java.ServletDemo01</servlet-class>
+
+        &lt;!&ndash;修改Servlet创建时机
+            1、被访问时创建：<load-on-startup>的值是负数
+            2、在服务器启动时创建：<load-on-startup>的值是0或正整数
+        &ndash;&gt;
+        <load-on-startup>-1</load-on-startup>
     </servlet>
     <servlet-mapping>
         <servlet-name>demo</servlet-name>
         <url-pattern>/demo</url-pattern>
-    </servlet-mapping>
+    </servlet-mapping>-->
 </web-app>
